@@ -1,0 +1,60 @@
+:root {
+  --color1: #5680e9;
+  --color2: #84ceeb;
+  --color3: #5ab9ea;
+  --color4: #c1c8e4;
+  --color5: #8860d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  background-image: url(./src/background.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--color5);
+  font-size: 24px;
+  margin-right: 35px;
+  font-family: "Raleway", sans-serif;
+  transition: 250ms ease;
+}
+
+ul li a:hover {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#login {
+  margin-right: 100px;
+}
+
+.logo img {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 10%;
+  flex: 1;
+}
