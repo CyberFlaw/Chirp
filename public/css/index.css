@@ -20,7 +20,7 @@ nav {
 }
 
 .page {
-  background-image: url(./src/background.jpg);
+  background-image: url(../src/background/index_bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -96,6 +96,10 @@ ul li a:hover {
   color: white;
   border: none;
   border-radius: 1rem;
+  transition: 250ms ease;
+}
+.btn-primary:hover {
+  background-color: var(--color1);
 }
 
 .box2 {
