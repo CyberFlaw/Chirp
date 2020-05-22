@@ -58,3 +58,67 @@ ul li a:hover {
   margin-left: 10%;
   flex: 1;
 }
+.box1 {
+  grid-area: box1;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  overflow: hidden;
+}
+.box1 p {
+  font-size: 70px;
+  font-family: "Bad Script", cursive;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.box3 {
+  grid-area: box3;
+  display: flex;
+  justify-content: end;
+}
+.box4 {
+  grid-area: box4;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.box4 p {
+  margin-left: 150px;
+  color: var(--color4);
+}
+.box4 button {
+  margin-left: 180px;
+}
+.btn-primary {
+  background: var(--color5);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.box2 {
+  grid-area: box2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 45vh;
+  grid-template-areas:
+    "box3 box3"
+    ". box4";
+}
+.box2 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  margin-right: 40%;
+  pointer-events: none;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33vh 54vh;
+  grid-template-areas:
+    "box1 ."
+    "box2 box2";
+}
