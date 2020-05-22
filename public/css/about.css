@@ -45,6 +45,12 @@ ul li a:hover {
 #login {
   margin-right: 100px;
 }
+#about {
+  background: var(--color5);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 1rem;
+}
 
 .logo img {
   width: 75px;
