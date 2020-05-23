@@ -1,0 +1,154 @@
+:root {
+  --color1: #5680e9;
+  --color2: #84ceeb;
+  --color3: #5ab9ea;
+  --color4: #c1c8e4;
+  --color5: #4e4264;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background: linear-gradient(#d8e4f1, #8dc9e8);
+  height: 100vh;
+}
+
+nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 10%;
+  flex: 1;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 5vh 66vh 14vh;
+  grid-template-areas:
+    ". . ."
+    ". box1 ."
+    ". . .";
+}
+
+.box1 {
+  grid-area: box1;
+  background: var(--color1);
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: 16vh 50vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "box2"
+    "box3";
+}
+
+.box2 {
+  grid-area: box2;
+  display: flex;
+  align-items: center;
+}
+.box3 {
+  grid-area: box3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50vh;
+  grid-template-areas: "box4 box5";
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+
+.avatar img {
+  height: 50px;
+  width: 50px;
+}
+
+.avatar {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background: var(--color4);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-right: 25px;
+  margin-left: 25px;
+
+  transition: 500ms ease-in-out;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 1fr;
+}
+.wrap h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 34px;
+}
+
+#avatar-change {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu {
+  height: 16vh;
+  width: 90%;
+  background-color: var(--color1);
+  border: 1px solid var(--color4);
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.menu p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+#delete-account {
+  margin-bottom: 10px;
+}
+
+.menu:hover {
+  background: var(--color4);
+}
+
+.box5 {
+  height: 48.5vh;
+  width: 1fr;
+  background: var(--color4);
+  margin-right: 10px;
+  border-radius: 0.5rem;
+}

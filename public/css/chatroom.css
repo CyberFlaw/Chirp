@@ -26,6 +26,7 @@ body {
   background: linear-gradient(var(--color1), var(--color2));
   margin: 20px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 ul {
@@ -144,8 +145,10 @@ a {
   border-radius: 2rem;
 }
 .avatar img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  transform: translateY(10px);
 }
 
 .avatar {
