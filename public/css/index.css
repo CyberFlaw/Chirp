@@ -88,18 +88,15 @@ ul li a:hover {
   margin-left: 150px;
   color: var(--color4);
 }
-.box4 button {
-  margin-left: 180px;
-}
-.btn-primary {
-  background: var(--color5);
+.box4 a {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-decoration: none;
   color: white;
-  border: none;
+  padding: 5px 25px;
+  background: var(--color5);
   border-radius: 1rem;
-  transition: 250ms ease;
-}
-.btn-primary:hover {
-  background-color: var(--color1);
+  margin-left: 180px;
+  margin-top: 10px;
 }
 
 .box2 {
