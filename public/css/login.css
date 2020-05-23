@@ -1,0 +1,152 @@
+:root {
+  --color1: #5680e9;
+  --color2: #84ceeb;
+  --color3: #5ab9ea;
+  --color4: #c1c8e4;
+  --color5: #8860d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  background-image: url(../src/background/login_bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--color5);
+  font-size: 24px;
+  margin-right: 35px;
+  font-family: "Raleway", sans-serif;
+  transition: 250ms ease;
+}
+
+ul li a:hover {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#login {
+  margin-right: 100px;
+  background: var(--color5);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 1rem;
+}
+
+.logo img {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 10%;
+  flex: 1;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 88vh;
+  grid-template-areas: "box1 box2";
+}
+.box1 {
+  grid-area: box1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 22vh 25vh 41vh;
+  grid-template-areas:
+    "box3"
+    "box4"
+    "box5";
+}
+.box2 {
+  grid-area: box2;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.form-control {
+  width: 100%;
+}
+.wrap {
+  margin-left: 20%;
+}
+.form-check-label {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+}
+.form-group {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+  font-weight: 500px;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box3 {
+  grid-area: box3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.box4 {
+  grid-area: box4;
+}
+
+.box3 h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+}
+.box4 p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.box5 {
+  grid-area: box5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box5 a {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 5px 25px;
+  background: var(--color1);
+  border-radius: 1rem;
+}
+
+.box5 h3 {
+  margin-top: 50px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 34px;
+}

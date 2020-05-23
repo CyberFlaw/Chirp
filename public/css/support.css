@@ -3,7 +3,7 @@
   --color2: #84ceeb;
   --color3: #5ab9ea;
   --color4: #c1c8e4;
-  --color5: #8860d0;
+  --color5: #a579f7;
 }
 
 * {
@@ -139,4 +139,9 @@ ul li a:hover {
   color: white;
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.btn {
+  background-color: var(--color1);
+  border-radius: 1rem;
 }
