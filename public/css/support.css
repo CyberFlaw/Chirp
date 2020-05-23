@@ -1,0 +1,142 @@
+:root {
+  --color1: #5680e9;
+  --color2: #84ceeb;
+  --color3: #5ab9ea;
+  --color4: #c1c8e4;
+  --color5: #8860d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  background: linear-gradient(#d9e5f2, #80c5e7);
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--color5);
+  font-size: 24px;
+  margin-right: 35px;
+  font-family: "Raleway", sans-serif;
+  transition: 250ms ease;
+}
+
+ul li a:hover {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#login {
+  margin-right: 100px;
+}
+#support {
+  background: var(--color5);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 1rem;
+}
+
+.logo img {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 10%;
+  flex: 1;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33vh 10vh 33vh 12vh;
+  grid-template-areas:
+    "box1 ."
+    "box2 box2"
+    "box3 box3"
+    "box4 box4";
+}
+
+.box1 {
+  grid-area: box1;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.box2 {
+  grid-area: box2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3 {
+  grid-area: box3;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.box1 h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 56px;
+  font-weight: 100;
+  margin-bottom: 25px;
+  margin-right: 50px;
+}
+.box2 p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+}
+.box2 a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 25px;
+  color: white;
+  background: var(--color1);
+  border-radius: 1rem;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.social img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.box4 {
+  grid-area: box4;
+  background: linear-gradient(#8ac9e8, var(--color5));
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.box4 p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
