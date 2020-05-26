@@ -1,4 +1,5 @@
 const experss = require("express");
+const socket = require("socket.io");
 
 const app = experss();
 const PORT = 3000 || process.env.PORT;
@@ -12,3 +13,13 @@ const server = app.listen(PORT, (err) => {
 });
 
 app.use(experss.static("./public"));
+
+const io = socket(server);
+io.on("connection", (socket) => {
+  console.log("Client Connected...");
+
+  socket.on("chat", (data) => {
+    console.log(data);
+    io.sockets.emit(chat.data);
+  });
+});

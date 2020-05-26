@@ -3,7 +3,8 @@
   --color2: #84ceeb;
   --color3: #5ab9ea;
   --color4: #c1c8e4;
-  --color5: #4e4264;
+  --color5: #8860d0;
+  --color6: #4e4264;
 }
 
 * {
@@ -129,7 +130,7 @@ ul li a:hover {
 
 .box4 {
   grid-area: box4;
-  background: linear-gradient(#8ac9e8, var(--color5));
+  background: linear-gradient(#8ac9e8, var(--color6));
   display: flex;
   align-items: flex-end;
   justify-content: center;
