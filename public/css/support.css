@@ -158,7 +158,7 @@ ul li a:hover {
 }
 
 .social img:hover {
-  animation: shake 250ms ease-in-out infinite;
+  animation: shake 500ms ease-in-out infinite;
 }
 
 @keyframes shake {
