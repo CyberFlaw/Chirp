@@ -20,6 +20,9 @@ io.on("connection", (socket) => {
 
   socket.on("chat", (data) => {
     console.log(data);
-    io.sockets.emit(chat.data);
+    io.sockets.emit("chat", data);
   });
+});
+io.on("disconnect", (err) => {
+  console.log("Client disconnected...");
 });

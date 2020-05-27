@@ -146,3 +146,34 @@ ul li a:hover {
   background-color: var(--color1);
   border-radius: 1rem;
 }
+
+.box2 a {
+  opacity: 0.8;
+  transition: 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.box2 a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  color: black;
+}
+
+.social img:hover {
+  animation: shake 250ms ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-30deg);
+    transform: scale(1);
+  }
+  50% {
+    transform: rotate(30deg);
+    transform: scale(1.1);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

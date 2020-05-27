@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
       rel="stylesheet"
@@ -20,7 +21,7 @@
           </div>
           <h2 id="user">Name</h2>
         </div>
-        <a href="index.html" class="btn">Leave Room</a>
+        <a href="index.html" class="btn" id="exit">Leave Room</a>
       </header>
       <main class="chat-main">
         <div class="chat-sidebar">
@@ -53,16 +54,16 @@
         </div>
       </main>
       <div class="chat-form-container">
-        <form id="chat-form">
-          <input
-            id="msg"
-            type="text"
-            placeholder="Enter Message"
-            required
-            autocomplete="off"
-          />
-          <button class="btn"><i class="fas fa-paper-plane"></i></button>
-        </form>
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn" id="send">
+          <i class="fas fa-paper-plane"></i>
+        </button>
       </div>
     </div>
 

@@ -123,3 +123,14 @@ ul li a:hover {
     "box1 ."
     "box2 box2";
 }
+
+.box4 a {
+  opacity: 0.8;
+  transition: 250ms ease;
+}
+
+.box4 a:hover {
+  opacity: 1;
+  color: black;
+  transform: scale(1.1);
+}
