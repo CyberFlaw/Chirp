@@ -27,20 +27,6 @@ socket.on("chat", (data) => {
   const msgBubble = document.createElement("div");
   msgBubble.classList.add("message");
 
-  // const name = document.createElement("p");
-  // name.classList.add("meta");
-  // name.innerText = "tim";
-
-  // const date = document.createElement("span");
-  // date.innerText = "date";
-
-  // const body = document.createElement("p");
-  // body.innerText = data.message;
-
-  // msgBubble.appendChild(name);
-  // msgBubble.appendChild(date);
-  // msgBubble.appendChild(body);
-
   msgBubble.innerHTML = `<p class='meta'>Name <span>Date</span> </p> <p>${data.message}</p>`;
 
   chatMessage.appendChild(msgBubble);
