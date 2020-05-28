@@ -23,6 +23,3 @@ io.on("connection", (socket) => {
     io.sockets.emit("chat", data);
   });
 });
-io.on("disconnect", (err) => {
-  console.log("Client disconnected...");
-});
