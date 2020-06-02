@@ -10,4 +10,13 @@ const registerValidation = (body) => {
   return Joi.validate(body, schema);
 };
 
+const loginValidation = (body) => {
+  const schema = {
+    user: Joi.string().min(6).alphanum().max(50).required(),
+    pass: Joi.string().regex(/^[a-zA-Z0-9]{8,1024}$/),
+  };
+  return Joi.validate(body, schema);
+};
+
 module.exports.registerValidation = registerValidation;
+module.exports.loginValidation = loginValidation;
