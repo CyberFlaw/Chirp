@@ -18,10 +18,6 @@ const dataModel = monoose.Schema({
     max: 1024,
     min: 8,
   },
-  date: {
-    type: Date,
-    default: Date.now,
-  },
 });
 
 module.exports = monoose.model("User", dataModel);

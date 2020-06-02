@@ -1,10 +1,9 @@
 const express = require("express");
 const mongoos = require("mongoose");
-const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8888;
 
 const authRoute = require("./routes/auth");
 
@@ -20,7 +19,7 @@ mongoos.connect(
   }
 );
 
-app.use(express.json);
+app.use(express.json());
 
 app.use("/api/user", authRoute);
 
